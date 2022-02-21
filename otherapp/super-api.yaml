@@ -12,4 +12,5 @@ spec:
         kind: GitRepository
         name: super-api
   interval: 1m0s
+  targetNamespace: default
 
