@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superapi
+spec:
+  selector:
+    matchLabels:
+      app: superapi
+  template:
+    metadata:
+      labels:
+        app: superapi
+    spec:
+      containers:
+      - name: superapi
+        image: ghcr.io/gbaeke/super:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
+          name: http
