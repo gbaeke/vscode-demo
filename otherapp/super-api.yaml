@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./chart/go-template
+      chart: ./charts/super-api
       sourceRef:
         kind: GitRepository
         name: super-api
